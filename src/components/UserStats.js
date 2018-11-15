@@ -12,7 +12,7 @@ const UserStats = () => (
           </div>
           <div className="stats">
             <div>{user.followers} Followers</div>
-            <div>Following {user.following}</div>
+            <div>{user.following} Following</div>
           </div>
         </div>
       )}

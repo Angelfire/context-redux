@@ -13,8 +13,8 @@ body,
   font-family: "Open Sans", sans-serif;
 }
 .nav {
-  background: #fff4ca;
-  border-bottom: 2px solid #ffd31f;
+  background: #fff;
+  border-bottom: 1px solid rgba(0,0,0,0.25);
   padding: 10px;
   display: flex;
   justify-content: flex-end;
@@ -23,13 +23,13 @@ body,
   display: flex;
   padding: 10px;
   height: calc(100% - 57px);
-  background-color: #fff;
+  background-color: #e6ecf0;
   box-sizing: border-box;
 }
 .sidebar {
-  border: 2px solid #1f73ff;
+  border: 1px solid rgba(0,0,0,0.25);
   margin-right: 10px;
-  background: #cbdfff;
+  background: #fff;
   max-height: 120px;
   flex-basis: 120px;
   padding: 10px;
@@ -43,12 +43,12 @@ body,
 }
 .content {
   padding: 10px;
-  border: 2px solid #8bc34a;
-  background-color: #f1f8e9;
+  background-color: #fff;
   flex: 1;
 }
 .user-avatar {
   border-radius: 50%;
+  display: block;
   width: 64px;
   height: 64px;
 }
