@@ -1,11 +1,12 @@
 import React from 'react';
 import Sidebar from './Sidebar';
+import Content from './Content';
 
-const Body = ({ sidebar, content }) => (
+const Body = () => (
     <div className="body">
-        <Sidebar>{sidebar}</Sidebar>
-        {content}
+      <Sidebar />
+      <Content />
     </div>
-);
+  );
 
 export default Body;

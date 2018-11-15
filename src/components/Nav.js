@@ -1,9 +1,10 @@
 import React from 'react';
+import UserAvatar from './UserAvatar';
 
-const Nav = ({ children }) => (
+const Nav = () => (
     <div className="nav">
-        {children}
+      <UserAvatar size="small" />
     </div>
-);
+  );
 
 export default Nav;
