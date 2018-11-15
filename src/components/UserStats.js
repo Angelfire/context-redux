@@ -1,17 +1,22 @@
 import React from 'react';
 import UserAvatar from './UserAvatar';
+import { UserConsumer } from '../UserContext';
 
-export const UserStats = ({ user }) => (
-    <div className="user-stats">
-        <div>
+const UserStats = () => (
+    <UserConsumer>
+      {user => (
+        <div className="user-stats">
+          <div>
             <UserAvatar user={user} />
-            <p>{user.name}</p>
-        </div>
-        <div className="stats">
+            {user.name}
+          </div>
+          <div className="stats">
             <div>{user.followers} Followers</div>
-            <div>{user.following} Following</div>
+            <div>Following {user.following}</div>
+          </div>
         </div>
-    </div>
-);
+      )}
+    </UserConsumer>
+  );
 
 export default UserStats;
