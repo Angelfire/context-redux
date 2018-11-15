@@ -1,28 +1,29 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import Nav from './components/Nav';
+import Body from './components/Body';
+
 import './App.css';
 
 class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
-    );
+    state = {
+      user: {
+        avatar: "https://www.gravatar.com/avatar/ae8006fddac9d723c41b99bedc9c6132",
+        name: "Ａｎｄｒｅｓ⠠⠵",
+        followers: 3249,
+        following: 732
+      }
+    };
+  
+    render() {
+      const { user } = this.state;
+  
+      return (
+        <div className="app">
+          <Nav user={user} />
+          <Body user={user} />
+        </div>
+      );
+    }
   }
-}
 
 export default App;
